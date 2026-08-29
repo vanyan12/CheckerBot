@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 def report_err(e):
-    bot.send_message(931534758, e)
+    bot.send_message(<id_of_telegram_user>, e)
     logging.error("Error has occured: %s" ,  str(e))
 
 
@@ -46,7 +46,7 @@ Error_time_2 = None
 # ===============================================================
 
 # Default directory to download files
-def_dir = rf'C:\Users\Aren\Desktop\CheckerBot\Files' 
+def_dir = rf'C:\Path\where\file\would\be\downloaded' 
 
 TOKEN = '<BOT_TOKEN>'
 bot = telebot.TeleBot(TOKEN)
